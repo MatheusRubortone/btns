@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Btns</title>
+
+		<link rel="stylesheet" type="text/css" href="estilo.css"></style>
+
+		<script language='Javascript'>
+			
+			function iniciaJogo(){
+				var nivel_jogo = document.getElementById('nivel_jogo').value;
+
+				window.location.href = 'jogo.html?'+nivel_jogo;
+				
+			}
+
+		</script>
+
+	</head>
+
+	<body id="body">
+
+		<div id="mainDiv">
+
+			<div id="sidebar">
+			</div>
+
+			<div id="cenario">
+
+				<div>
+
+					<h1>Btns</h1>
+
+					<p>
+					
+						<b>Nível: </b>
+
+						<select class="drop" id="nivel_jogo">
+							<option value="1">Fácil</option>
+							<option value="2">Normal</option>
+							<option value="3">Difícil</option>
+						</select>
+
+					</p>
+
+					<br />
+
+					<button id="play" src="imagens/play.svg" onclick="iniciaJogo()">Jogar</button>
+					
+				</div>
+
+			</div>
+		</div>
+	</body>
+	
+</html>
